@@ -2,6 +2,16 @@ class WhatsAppController {
 
     constructor(){
         console.log('WhatsAppController ok')
-        console.log('rodando')
+        this.loadElements();
+        
+    }
+
+    loadElements(){
+        this.el = {};
+
+        document.querySelectorAll('[id]').forEach(element => {
+
+            this.el[Format.getCamelCase(element.id)] = element;
+        });
     }
 }
