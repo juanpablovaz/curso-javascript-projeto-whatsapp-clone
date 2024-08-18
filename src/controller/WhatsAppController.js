@@ -3,6 +3,7 @@ class WhatsAppController {
     constructor(){
         console.log('WhatsAppController ok')
         this.loadElements();
+        this.elementsPrototype();
         
     }
 
@@ -13,5 +14,9 @@ class WhatsAppController {
 
             this.el[Format.getCamelCase(element.id)] = element;
         });
+    }
+
+    elementsPrototype(){
+        
     }
 }
