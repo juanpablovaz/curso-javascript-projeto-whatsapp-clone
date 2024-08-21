@@ -181,7 +181,10 @@ class WhatsAppController {
         this.el.btnAttach.on('click', e => {
 
             this.el.menuAttach.addClass('open');
-            document.addEventListener('click', 
+            document.addEventListener('click', () => {
+                
+            });
+            
         });
 
         this.el.btnAttachPhoto.on('click', e => {
@@ -200,6 +203,10 @@ class WhatsAppController {
             console.log('clicou');
         });
         
+    }
+
+    closeMenuAttach(e){
+
     }
 
     closeAllLeftPanel(){
